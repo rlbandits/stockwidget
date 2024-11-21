@@ -34,6 +34,12 @@ SET UP STEPS
 4. Before </body> tag, include /js/script.js file in this repository to yours. Then make necessarry changes on file paths in code.
 <!-- Change file path if necessary -->
 <script src="./js/script.js"></script>
+*Note that this repository also includes script1.js file.
+    -  script1.js file is another version where in the price is being updated every second via finnhub Trades websocket.
+    - Documentation may be found here: https://finnhub.io/docs/api/websocket-trades.
+    - You can switch between script.js and script1.js.
+    - Also note that, from time to time, finnhubs Trade websocket do not return any data and just kept on pinging.
+        -> This is why script.js is chosen to be the default script to load as finnhub's quote seem to be more stable.
 
 5. On script.js, you may be able to change values of the following variables:
 arr
