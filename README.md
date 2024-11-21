@@ -1,5 +1,6 @@
 DESCRIPTION:
-This widget fetches quote from https://finnhub.io/api/v1/quote?symbol=AAPL&token=<api_token>" endpoint via AJAX
+This widget fetches quote from https://finnhub.io/api/v1/quote?symbol=AAPL&token=<api_token>" endpoint via AJAX.
+Steps in getting API Token could be found below;
 Documentation could be found here: https://finnhub.io/docs/api/quote
 Fetched quotes are displayed on card(s) and are refreshed every n seconds where n is interval_time variable in /js/script.js file.
 The number of displayed quote depends upon the content of arr variable in /js/script.js file.
