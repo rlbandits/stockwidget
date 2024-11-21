@@ -159,5 +159,16 @@ function getPrice(symbol) {
     xhttp.send();
 }
 
-
-
+/* For refresh data
+* set interval_time variable above to set interval for refresh
+*
+*/
+var counter = 0;
+var interval = setInterval(function(){
+    console.log(counter++);
+    if(counter == interval_time) {
+        $(".container").empty();
+        construct();
+        counter = 0;
+    }
+}, 1000);
