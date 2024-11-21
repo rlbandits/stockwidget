@@ -165,7 +165,7 @@ function getPrice(symbol) {
 */
 var counter = 0;
 var interval = setInterval(function(){
-    console.log(counter++);
+    // console.log(counter++);
     if(counter == interval_time) {
         $(".container").empty();
         construct();
