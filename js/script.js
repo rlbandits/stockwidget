@@ -29,7 +29,7 @@ $( document ).ready(function() {
         let w = window.outerWidth;
 
         //Setting different layout when card is too small.
-        if(w <= 768) {
+        if(w <= 980) {
             $(".card-header-content").css('display', 'block');
             $(".symbol").css('margin', '0 auto');
             $(".symbol").css('text-align', 'center');
@@ -121,7 +121,7 @@ function getPrice(symbol) {
                 $("#card-"+symbol).html(hold);
 
                 //Setting different layout when card is too small.
-                if(card_width < 3 || vw == 980) {
+                if(card_width < 3 || vw <= 980) {
                     $(".card-header-content").css('display', 'block');
                     $(".symbol").css('margin', '0 auto');
                     $(".symbol").css('text-align', 'center');
