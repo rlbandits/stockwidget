@@ -20,9 +20,31 @@ const interval_time = 60;//Set refresh time (sec); Currently set in 60 seconds.
 var card_width = Math.floor(12/arr.length);//For even distribution of card width; DO NOT CHANGE.
 if(card_width < 3) card_width = 2;// Set minimum card width; DO NOT CHANGE.
 
+let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
 $( document ).ready(function() {
     construct();
+
+    window.addEventListener('resize', function(event) {
+        let w = window.outerWidth;
+
+        //Setting different layout when card is too small.
+        if(w <= 768) {
+            $(".card-header-content").css('display', 'block');
+            $(".symbol").css('margin', '0 auto');
+            $(".symbol").css('text-align', 'center');
+            $(".symbol").css('padding', '0 0 5px 0');
+            $(".diff").css('width', '100%');
+        } else {
+            $(".card-header-content").css('display', 'flex');
+            $(".symbol").css('text-align', 'left');
+            $(".symbol").css('padding', '3px 7px');
+            $(".symbol").css('margin', '0px');
+            $(".diff").css('width', '40%');
+        }
+    }, true);
 });
+
 
 /* Function to construct initial card.
 * Constructs initial card content.
@@ -99,7 +121,7 @@ function getPrice(symbol) {
                 $("#card-"+symbol).html(hold);
 
                 //Setting different layout when card is too small.
-                if(card_width < 3) {
+                if(card_width < 3 || vw == 980) {
                     $(".card-header-content").css('display', 'block');
                     $(".symbol").css('margin', '0 auto');
                     $(".symbol").css('text-align', 'center');
