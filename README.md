@@ -1,3 +1,5 @@
+Click raw or download README.md file to view full details.
+
 DESCRIPTION:
 This widget fetches quote from https://finnhub.io/api/v1/quote?symbol=AAPL&token=<api_token>" endpoint via AJAX.
 Steps in getting API Token could be found below;
