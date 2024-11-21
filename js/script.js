@@ -12,7 +12,7 @@ const arr = [
     // 'PEMSF'
 ];
 
-const api_key = 'csv8tq1r01qq28mn30u0csv8tq1r01qq28mn30ug';//API Key; Getting API key is in README.
+const api_key = '<api_token>';//API Key; Getting API key is in README.
 
 const interval_time = 60;//Set refresh time (sec); Currently set in 60 seconds.
 
