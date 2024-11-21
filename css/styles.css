@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.diff,
+.price,
+.card-body {
+    text-align: center !important;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.stats {
+    color: #e8e8e9;
+    font-size: .95rem;
+    line-height: 1rem;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.card-container {
+    padding: 0px;
+}
+
+.card {
+    background-color: #121317;
+    border: none;
+    color: #e8e8e9;
+    height: fit-content;
+    margin: 3px;
+    padding: 7px;
+}
+
+.card-header {
+    background: none;
+    border: none;
+    padding: 20px 0px 0px 0px;
+}
+
+.card-header-content {
+    background-color: #1a1b20;
+    color: #e8e8e9;
+    margin: 0 auto;
+    padding: 6px;
+    width: 90%;
+}
+
+.card-body {
+    padding: 10px 10px 25px 10px;
+}
+
+.symbol {
+    font-size: .95rem;
+    font-weight: 700;
+    padding: 3px 7px;
+    width: 60%;
+}
+
+.diff {
+    background-color: #121317;
+    padding: 3px;
+    width: 40%;
+}
+
+.currency {
+    color: #e8e8e9;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.alert {
+    background-color: #FFFFFF;
+    color: #121317;
+    font-size: 1rem;
+    font-weight: 700;
+    height: fit-content;
+    margin: 0 auto;
+    opacity: 0.7;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.alert p{
+    opacity: 1;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.rounded {
+    border-radius: 18px !important;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.loader {
+    max-width: 175px;
+    margin: 0 auto;
+}
+
+.visible {
+    margin-top: 0px;
+    opacity: 0.9;
+    transition: all .3s ease-in-out;
+}
+
+.hidden {
+    margin-top: -85px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+    .card-container {
+        width: 100%;
+    }
+    .price,
+    .symbol,
+    .diff {
+        font-size: 3rem;
+        padding: 10px 0px;
+    }
+    .stats {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .rounded {
+        border-radius: 20px !important;
+    }
+}
