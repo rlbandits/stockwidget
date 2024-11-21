@@ -1,10 +1,11 @@
+DESCRIPTION:
 This widget fetches quote from https://finnhub.io/api/v1/quote?symbol=AAPL&token=<api_token>" endpoint via AJAX
 Documentation could be found here: https://finnhub.io/docs/api/quote
-
 Fetched quotes are displayed on card(s) and are refreshed every n seconds where n is interval_time variable in /js/script.js file.
 The number of displayed quote depends upon the content of arr variable in /js/script.js file.
 
-SET UP steps
+
+SET UP STEPS
 *Assuming you have set up your own basic HTML structure,
 1. Inside header tag, paste CDNs below:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,6 +32,9 @@ api_key
 interval_time
 
 6. Get API Key. See steps below.
+
+*An example of the set up could be viewed in index.php of this repository.
+*Note that page could also be manually refreshed by pressing ctrl+R on your keyboard.
 
 
 GETTING API KEY
